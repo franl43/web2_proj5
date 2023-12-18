@@ -1,7 +1,7 @@
 {
   "main": "server.js",
   "scripts": {
-    "serve": "node server.js" 
+    "serve": "npm i; node server.js" 
   },
   "dependencies": {
     "express": "^4.17.1",
