@@ -70,6 +70,10 @@ imageInput.addEventListener('change', (event) => {
 
 uploadBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    if(!snapTitle.value.trim()) {
+        alert("Give your snap a name!");
+        return;
+    }
     let imgData = canvas.toDataURL();
     fetch(imgData)
         .then(res => res.blob())
