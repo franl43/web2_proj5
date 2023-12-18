@@ -1,0 +1,71 @@
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-link {
+    font-size: 24px;
+}
+
+
+.my-bg-primary {
+    background-color: #8f6423;
+}
+
+.my-btn-primary {
+    background-color: #c78f3cb4;
+}
+
+.my-btn-secondary {
+    background-color: #c78f3c8c;
+}
+
+#about-btn{
+    padding: 3px;
+    font-size: 24px;
+    border: 0;
+    margin: 8px;
+    text-align: start;
+}
+
+#about-btn:hover {
+    background-color: #c78f3c80;
+    cursor: pointer;
+}
+
+#about-text {
+    margin: 8px;
+}
+
+.chapter > h3 {
+    padding: 3px;
+    font-size: 20px;
+    background-color: #c78f3cb4;
+}
+
+.chapter > p {
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+#choose-snap-btn > label {
+    margin: 0;
+}
+
+.card > img {
+    width: 30vw;
+    height: auto;
+    align-self: center;
+    padding: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 20px;
+}
+
+.err-msg {
+    margin: 20px;
+}

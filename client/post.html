@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Projekt 5</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg my-bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="public/images/logo.png" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top">
+                Rodeo Fans
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" href="/post">Post</a>
+                    <a class="nav-link" href="/gallery">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="before" class="d-grid gap-2 col-6 mx-auto">
+        <video id="player" width="100%" autoplay></video>
+        <button type="button" id="take-snap-btn" class="btn btn-dark my-btn-primary btn-lg">
+            <i class="bi bi-camera"></i>
+            Snap
+        </button>
+        <button type="button" id="choose-snap-btn" class="btn btn-dark my-btn-secondary btn-lg">
+            <label for="image" class="form-label">
+                <i class="bi bi-upload"></i>
+                Choose
+            </label>
+            <input class="form-control" type="file" id="image" accept="image/*" hidden>
+        </button>
+    </div>
+    <div id="after" class="d-grid gap-2 col-6 mx-auto">
+        <canvas id="canvas"></canvas>
+        <input id="title" type="text" class="form-control mt-2" placeholder="Snap title..." required />
+        <button type="button" id="upload-btn" class="btn btn-dark my-btn-primary btn-lg">
+            <i class="bi bi-cloud-upload"></i>
+            Upload
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./public/js/post.js"></script>
+</body>
+
+</html>
